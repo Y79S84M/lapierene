@@ -1,0 +1,240 @@
+@import url(./reset.css);
+
+/*
+RESTAURATION = PRUNE
+POURPRE = RESERVATION
+AQUA = INFORMATION
+SOLEIL = EVENEMENTIEL
+
+PRUNE = #ac2d62
+SOLEIL = #f0b81b
+POURPRE = #aa98c5
+AQUA = #47a09c
+BLANC = #ffffff
+NOIR = #000000
+*/
+
+:root {
+    --prune: #ac2d62;
+    --soleil: #f0b81b;
+    --pourpre: #aa98c5;
+    --aqua: #47a09c;
+}
+
+header {
+    height: 8vh;
+}
+
+.hero-banner{
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.main-headers {
+    width: 100%;
+
+}
+
+.main-headers > h1 {
+    margin: 1.5em auto;
+}
+
+.main-headers > p {
+    margin: 1.5em auto;
+}
+
+.call-to-action {
+    height: 48px;
+    width: 48%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-link, .events-link {
+    height: 100%;
+    width: 192px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.menu-link:hover, .events-link:hover {
+    height: 100%;
+    width: 192px;
+    border: 1px solid;
+    border-radius: 8px;
+    transform: rotate(5deg);
+}
+
+.hero-img{
+    width: fit-content;
+    margin: 1em auto;
+}
+
+img.logo {
+    max-width: 24vw;
+    transform: rotate(12deg);
+}
+
+section, footer {
+    width: 96%;
+    height: auto;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: justify;
+}
+
+section > h2 {
+    margin-bottom: 1em;
+}
+
+.newsletter {
+    text-align: center;
+    margin: 2em auto;
+}
+
+footer > h2 {
+    margin-bottom: 1em;
+}
+
+footer > div {
+    margin: 2em auto;
+}
+
+footer > div > h3 {
+    margin-bottom: 0.75em;
+}
+
+.footer-nav > ul > li {
+    display: inline;
+    margin: 0 1em;
+}
+
+.footer-bottom {
+    font-style: italic;
+    margin-top: 2em;
+    text-align: center;
+}
+
+/* 
+BREAKPOINTS
+
+Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...} 
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...} 
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...} 
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...} 
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
+
+*/
+
+@media only screen and (max-width: 720px) {
+    header {
+        height: 6vh;
+    }
+    
+    main > section, footer {
+        width: 98%;
+        height: auto;
+        margin: 2em auto;
+        padding: 1em;
+        text-align: center;
+    }
+
+    form {
+        margin: 0 auto;
+        width: 96%;
+        height: 128px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    form > input {
+        width: 100%;
+    }
+    
+    .hero-banner {
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .main-headers {
+        width: 100%;
+    
+    }
+    
+    .main-headers > h1 {
+        margin: 1em auto;
+    }
+    
+    .main-headers > p {
+        margin: 1em auto;
+    }
+    
+    .call-to-action {
+        height: 48px;
+        width: 100%;
+        margin: 1em auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .menu-link, .events-link {
+        height: 100%;
+        width: 144px;
+        border: 1px solid;
+        border-radius: 8px;
+    }
+    
+    .menu-link:hover, .events-link:hover {
+        height: 100%;
+        width: 144px;
+        border: 1px solid;
+        border-radius: 8px;
+        transform: rotate(5deg);
+    }
+    
+    .hero-img{
+        width: fit-content;
+        margin: 1em auto;
+    }
+    
+    img.logo {
+        max-width: 48vw;
+    }
+    
+    section, footer {
+        width: 96%;
+        height: auto;
+        margin: 2em auto;
+        padding: 1em;
+        text-align: justify;
+    }
+    
+} 
