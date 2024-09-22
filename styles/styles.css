@@ -84,18 +84,21 @@ body{
 /*## GENERAL LAYOUT ##*/
 
 header{
+    color: #ffffff;
+    width: 100%;
     text-align: center;
 }
 
 main,footer{
-    padding: 1em .5em;
+    color: #ffffff;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
 }
 
 section{
-    margin: 1em 0.25em;
+    margin: 1em 0.5em;
+    padding: 1em .75em;
 }
 
 .hidden{
@@ -121,11 +124,14 @@ section{
 .navbar-logo{
     height: auto;
     width: 112px;
+    transform: rotate(15deg);
+    margin-left: 1em;
 }
 
 .hero-logo{
+    margin: 1em 0;
     height: auto;
-    max-width: 336px;
+    max-width: 400px;
 }
 
 .horizon{
@@ -138,7 +144,6 @@ section{
 
 .navbar{
     width: 100%;
-    padding: 0 2em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -154,11 +159,13 @@ section{
 }
 
 .hamburger{
+    margin-right: 2em;
     height: 40px;
     width: 40px;
     color: #ffffff;
     border-radius: 8px;
     border: 1px solid #ffffff;
+    opacity: 0.88;
 }
 
 .nav-links-container{
@@ -167,15 +174,16 @@ section{
 
 .nav-links{
     width: 100%;
+    padding-top: 3em;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-link{
     color: #ffffff;
-    margin-top: 1em;
+    margin: 0 1em;
     border-bottom: 2px solid #ffffff;
 }
 
@@ -184,6 +192,23 @@ section{
 }
 
 /*## CUSTOM STYLES ##*/
+
+.hero-container{
+    padding: 2em 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../assets/hero-bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-banner{
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .call-to-action{
     margin: 1em 0;

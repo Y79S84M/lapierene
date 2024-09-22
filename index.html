@@ -8,13 +8,13 @@
     <link rel="icon" type="image/x-icon" href="./assets/Pie_Coloré.png">
 </head>
 <body>
-    <header>
+    <header class="hero-container">
         <nav role="navigation" class="navbar">
             <div class="navbar-container">
-                <img  class="navbar-logo" src="./assets/Pie_Blanche.png" alt="Logo rond, la pie René"/>
+                <img  class="navbar-logo" src="./assets/Pie_Coloré.png" alt="Logo rond, la pie René"/>
                 <button id="toggle-menu" class="hamburger" type="menu" >&#9776;</button>
             </div>
-            <div id="nav-links" class="nav-links-container hidden">
+            <div id="nav-links-container" class="nav-links-container hidden">
                 <ul class="nav-links">
                     <li class="nav-link"><a href="./index.html">Accueil<a></li>
                     <li class="nav-link"><a href="./events.html">Actualités</a></li>
@@ -22,19 +22,17 @@
                 </ul>
             </div>
         </nav>
-    </header>
-    <img class="horizon" src="./assets/Ligne_Blanche.png" alt="Ligne d'horizon représantant la silhouette des pyrénnées">
-    <main>
-        <h1>Restaurant Bar à Jeux</h1>
-        <section>
-            <div>
-                <img class="hero-logo" src="./assets/01_LPR_Logo_Horizontal_Coloré.png" alt="Restaurant bar, La pie René" />
-            </div>
+        <section class="hero-banner">
+            <h1>Restaurant Bar à Jeux</h1>
+            <img class="horizon" src="./assets/Ligne_Blanche.png" alt="Ligne d'horizon représantant la silhouette des pyrénnées">
+            <img id="hero-logo" class="hero-logo" src="./assets/01_LPR_Logo_Horizontal_Blanc.png" alt="Restaurant bar, La pie René" />
             <div class="call-to-action">
                 <button class="button cta-menu">Notre menu</button>
                 <button class="button cta-news">Votre actualité</button>
             </div>
         </section>
+    </header>
+    <main>
         <section>
             <h2 class="border-bottom-soleil">Un lieu authentique et ludique</h2>
             <p>
