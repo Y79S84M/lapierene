@@ -102,11 +102,25 @@ section{
     display: none;
 }
 
+.border-bottom-soleil {
+    padding-bottom: 1em;
+    border-bottom: 2px solid var(--soleil);   
+}
+
+.border-bottom-prune {
+    padding-bottom: 1em;
+    border-bottom: 2px solid var(--prune);   
+}
+
+.border-bottom-pourpre {
+    padding-bottom: 1em;
+    border-bottom: 2px solid var(--pourpre);   
+}
 /*## IMAGES ##*/
 
 .navbar-logo{
     height: auto;
-    width: 80px;
+    width: 112px;
 }
 
 .hero-logo{
@@ -194,4 +208,21 @@ section{
 
 .button.cta-news{
     background-color: var(--soleil);
+}
+
+form {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form > input {
+    width: 100%;
+}
+
+.cta-subscribe {
+    background-color: var(--pourpre);
 }
